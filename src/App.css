@@ -55,6 +55,7 @@ html, body, #root {
 	 transition: border 0.5s ease-out;
 	 border-bottom: 2px solid #70a1ff;
 }
+/* Login and register forms container */
  .box-container {
 	 display: flex;
 	 flex-direction: column;
@@ -164,7 +165,8 @@ html, body, #root {
 	 flex: 1;
 	 visibility: hidden;
 }
- .pwd-weak {
+/* This should have shown a strength bar when the user inputs password but for some reason its not showing */
+/*.pwd-weak {
 	 background-color: #e74c3c;
 }
  .pwd-medium {
@@ -176,89 +178,7 @@ html, body, #root {
  .show {
 	 visibility: visible;
 }
- 
+ */
 
-/*Responsive*/
-@media (max-width: 992px) {
-    .img-holder {
-        display: none;
-    }
-  
-    .form-holder {
-        margin-left: 0;
-    }
-  
-    .form-holder .form-content {
-        padding: 125px 60px 60px;
-    }
-  
-    .form-body.on-top .form-holder .form-content, .form-body.on-top-mobile .form-holder .form-content {
-        padding: 60px;
-    }
-  
-    /*.website-logo {
-        position: relative;
-        top: 50px;
-        left: 50px;
-        right: initial;
-        bottom: initial;
-    }
-  
-    .website-logo .logo {
-        background-image: url("../images/logo-light.svg");
-    }
-  */
-    .form-body.without-side .img-holder {
-        display: inline-block;
-    }
-  
-    .form-body.without-side .website-logo .logo {
-        background-image: url("timi.jpg");
-    }
-  
-    .form-body.without-side .form-holder .form-content {
-        padding: 125px 30px 60px;
-    }
-  
-    .form-body.on-top-mobile .website-logo {
-        position: absolute;
-    }
-  
-    .form-body.on-top-mobile .img-holder {
-        display: block;
-        position: relative;
-        width: 100%;
-        min-height: initial;
-        height: initial;
-        overflow: initial;
-        padding: 40px;
-    }
-  
-    .form-body.on-top-mobile .img-holder .info-holder.simple-info h3 {
-        margin-bottom: 16px;
-    }
-  
-    .form-body.on-top-mobile .img-holder .info-holder.simple-info p {
-        margin-bottom: 10px;
-    }
-  
-    .form-body.on-top-mobile .img-holder .info-holder.simple-info img {
-        margin-bottom: 20px;
-    }
-  
-    .form-body.on-top-mobile .form-holder {
-        margin-left: 0;
-    }
-  }
-  
-  @media (max-width: 575px) {
-    .form-body.on-top .img-holder, .form-body.on-top-mobile .img-holder {
-        padding: 90px 40px 40px;
-    }
-  
-    .form-content .row.top-padding .form-button {
-        text-align: left !important;
-        margin-top: 30px;
-    }
-  }
+
   
